@@ -16,56 +16,56 @@ const testimonials = [
     company: "E-commerce Experts",
     quote:
       "The detailed call logs have been a game-changer for our business. We can now easily track and improve our customer interactions.",
-    image: "https://picsum.photos/100",
+    image: "https://picsum.photos/101",
   },
   {
     name: "Mike Johnson",
     company: "Retail Giants",
     quote:
       "The AI agents handle our high call volumes effortlessly. It's like having a 24/7 support team without the overhead.",
-    image: "https://picsum.photos/100",
+    image: "https://picsum.photos/102",
   },
   {
     name: "Sarah Lee",
     company: "Healthcare Solutions",
     quote:
       "Patient satisfaction has improved significantly since we implemented this AI call center. It's been a fantastic investment.",
-    image: "https://picsum.photos/100",
+    image: "https://picsum.photos/103",
   },
   {
     name: "Emily Davis",
     company: "Global Logistics Co.",
     quote:
       "This solution has streamlined our communication process, saving us countless hours and improving efficiency.",
-    image: "https://picsum.photos/100",
+    image: "https://picsum.photos/104",
   },
   {
     name: "Robert Wilson",
     company: "Travel Connect",
     quote:
       "Our clients love how quickly they can get answers. This system has taken our customer experience to the next level.",
-    image: "https://picsum.photos/100",
+    image: "https://picsum.photos/105",
   },
   {
     name: "Olivia Martinez",
     company: "Tech Innovators",
     quote:
       "The AI's ability to resolve queries autonomously has freed up our team to focus on more complex tasks.",
-    image: "https://picsum.photos/100",
+    image: "https://picsum.photos/106",
   },
   {
     name: "James Brown",
     company: "Financial Advisors LLC",
     quote:
       "We've noticed a huge boost in client trust and satisfaction thanks to the seamless call experiences.",
-    image: "https://picsum.photos/100",
+    image: "https://picsum.photos/107",
   },
   {
     name: "Sophia Taylor",
     company: "Event Planners United",
     quote:
       "Managing customer inquiries during peak seasons is now stress-free with this AI-powered system.",
-    image: "https://picsum.photos/100",
+    image: "https://picsum.photos/108",
   },
 ];
 
@@ -83,7 +83,7 @@ export default function Testimonials() {
       await controls.start({
         x: -scrollDistance,
         transition: {
-          duration: scrollDistance / 500,
+          duration: scrollDistance / 75,
           ease: "linear",
           repeat: Infinity,
           repeatType: "loop",

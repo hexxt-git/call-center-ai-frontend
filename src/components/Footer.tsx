@@ -20,7 +20,7 @@ const socialIcons = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900/90 backdrop-blur-xl text-white py-12 z-30">
+    <footer className="bg-[#08090b] backdrop-blur-xl text-white py-12 z-30">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -104,7 +104,7 @@ export default function Footer() {
             </div>
           </div>
           <motion.div
-            className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400"
+            className="mt-8 pt-8 border-t border-[#112] text-center text-gray-400"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.5 }}

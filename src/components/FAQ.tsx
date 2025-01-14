@@ -65,10 +65,10 @@ export default function FAQ() {
             {faqs.map((faq, index) => (
               <motion.div key={index} variants={itemVariants}>
                 <AccordionItem value={`item-${index}`}>
-                  <AccordionTrigger className="text-start">
+                  <AccordionTrigger className="text-start text-lg lg:text-xl hover:no-underline">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent>{faq.answer}</AccordionContent>
+                  <AccordionContent className="lg:text-lg">{faq.answer}</AccordionContent>
                 </AccordionItem>
               </motion.div>
             ))}
