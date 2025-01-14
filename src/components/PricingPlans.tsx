@@ -68,7 +68,7 @@ function TiltCard({ children }: { children: React.ReactNode }) {
 
 export default function PricingPlans() {
   return (
-    <section className="relative z-30 py-16 bg-white">
+    <section className="relative z-30 py-16 pb-20 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Pricing Plans</h2>
         <div className="grid md:grid-cols-3 gap-8">

@@ -72,7 +72,7 @@ function Counter({ value, label }: { value: number; label: string }) {
 
 export default function FeatureOverview() {
   return (
-    <section className="relative z-30 py-16">
+    <section className="relative z-30 py-16 pb-32">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">
           Feature Overview
