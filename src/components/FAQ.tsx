@@ -68,7 +68,9 @@ export default function FAQ() {
                   <AccordionTrigger className="text-start text-lg lg:text-xl hover:no-underline">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="lg:text-lg">{faq.answer}</AccordionContent>
+                  <AccordionContent className="lg:text-lg">
+                    {faq.answer}
+                  </AccordionContent>
                 </AccordionItem>
               </motion.div>
             ))}

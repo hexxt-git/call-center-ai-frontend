@@ -69,16 +69,16 @@ function TiltCard({ children }: { children: React.ReactNode }) {
 export default function PricingPlans() {
   return (
     <section className="relative z-30 py-16 pb-20 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 lg:px-16">
         <h2 className="text-3xl font-bold text-center mb-12">Pricing Plans</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
             <TiltCard key={index}>
               <Card
                 className={`relative z-10 h-full ${plan.recommended ? "border-2 border-blue-500" : ""}`}
               >
                 {plan.recommended && (
-                  <div className="absolute top-0 right-0 bg-blue-500 text-white px-2 py-1 text-sm rounded-bl">
+                  <div className="absolute top-0 right-0 bg-blue-500 text-white px-2 py-1 text-sm rounded-bl rounded-tr-lg">
                     Recommended
                   </div>
                 )}

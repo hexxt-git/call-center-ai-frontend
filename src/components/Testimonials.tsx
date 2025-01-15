@@ -111,10 +111,7 @@ export default function Testimonials() {
       <div className="w-screen">
         <h2 className="text-3xl font-bold text-center mb-4">Success Stories</h2>
         <div ref={containerRef} className="overflow-hidden">
-          <motion.div
-            className="flex py-8"
-            animate={controls}
-          >
+          <motion.div className="flex py-8" animate={controls}>
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <TestimonialCard key={index} testimonial={testimonial} />
             ))}

@@ -86,7 +86,7 @@ export default function FeatureOverview() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
               whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              whileTap={{ scale: 0.95, rotate: Math.random() * 10 - 5 }}
               drag
               dragElastic={0.125}
               dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}

@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 
   return (
     <div className="relative min-h-screen w-full">
-      <div className="fixed inset-0 min-h-[200vh] overflow-hidden opacity-80">
+      <div className="fixed inset-0 min-h-[400vh] overflow-hidden opacity-80">
         <motion.div className="absolute inset-0" style={{ y }}>
           <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-purple-400 to-pink-400 opacity-30" />
           <svg
