@@ -6,7 +6,7 @@ export default function Demo() {
         (this is a placeholder not the actual demo)
         <video controls className="w-full rounded-xl shadow-lg">
           <source
-            src="https://18we9974rd.ufs.sh/f/qzgZwz08L6kqAKClwRVHdKuwMijxUatESo7GFJTRHBLr216f"
+            src="https://18we9974rd.ufs.sh/f/qzgZwz08L6kqCpzkTC3QM4BjWsElkJrDiFx9m1wduypbRYqK"
             type="video/mp4"
           />
         </video>
