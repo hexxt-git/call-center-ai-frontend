@@ -1,6 +1,4 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Head from "next/head";
 import "./globals.css";
 import Layout from "@/components/Layout";
 
@@ -21,7 +19,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta
           name="description"
           content="AI Call Center Agents provide 24/7 customer support with advanced AI technology. Improve customer satisfaction and streamline your support process."
@@ -53,7 +51,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <title>
           AI Call Center Agents - Revolutionize Your Customer Support
         </title>
-      </Head>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
