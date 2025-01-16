@@ -15,7 +15,7 @@ export default function Header() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
         >
-          AI-Powered Call Center Agents{" "}
+          Parrot: AI-Powered Call Center Agents{" "}
           <Phone
             className="text-blue-500 inline scale-x-[-1]"
             size={40}
