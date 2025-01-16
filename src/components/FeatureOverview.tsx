@@ -69,8 +69,11 @@ function Counter({ value, label }: { value: number; label: string }) {
     </div>
   );
 }
+import { useMediaQuery } from "react-responsive";
 
 export default function FeatureOverview() {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   return (
     <section className="relative z-30 py-16 pb-32">
       <div className="container mx-auto px-4">
@@ -87,7 +90,7 @@ export default function FeatureOverview() {
               transition={{ duration: 0.4 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95, rotate: Math.random() * 10 - 5 }}
-              drag
+              drag={!isMobile}
               dragElastic={0.125}
               dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
             >

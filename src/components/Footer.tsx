@@ -8,6 +8,8 @@ import {
   Linkedin,
   Mail,
   Phone,
+  Computer,
+  Laptop,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -71,7 +73,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/#contact"
+                    href="https://github.com/hexxt-git/call-center-ai-frontend/issues"
                     className="hover:text-blue-400 transition-colors"
                   >
                     Contact Support
@@ -80,24 +82,24 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
+              <h4 className="text-lg font-semibold mb-4">Who are we</h4>
               <ul className="space-y-2">
                 <li className="flex items-center">
-                  <Mail size={16} className="mr-2" />
+                  <Laptop size={18} className="mr-2" />
                   <a
-                    href="mailto:info@aicallcenter.com"
+                    href="https://linkedin.com/in/zegdani"
                     className="hover:text-blue-400 transition-colors"
                   >
-                    info@aicallcenter.com
+                    Zeghdani Salah
                   </a>
                 </li>
                 <li className="flex items-center">
-                  <Phone size={16} className="mr-2" />
+                  <Laptop size={18} className="mr-2" />
                   <a
-                    href="tel:+1234567890"
+                    href="https://www.linkedin.com/in/aymen-charfaoui-15990828b/"
                     className="hover:text-blue-400 transition-colors"
                   >
-                    +1 (234) 567-890
+                    Charfaoui Aymen
                   </a>
                 </li>
               </ul>

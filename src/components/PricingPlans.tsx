@@ -43,6 +43,9 @@ const plans = [
   },
 ];
 
+import { useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
+
 function TiltCard({ children }: { children: React.ReactNode }) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -50,12 +53,21 @@ function TiltCard({ children }: { children: React.ReactNode }) {
   const rotateX = useTransform(y, [-100, 100], [30, -30]);
   const rotateY = useTransform(x, [-100, 100], [-30, 30]);
 
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
+  useEffect(() => {
+    if (isMobile) {
+      x.set(0);
+      y.set(0);
+    }
+  }, [isMobile, x, y]);
+
   return (
     <motion.div
       style={{ x, y, rotateX, rotateY, z: 100 }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      drag
+      drag={!isMobile}
       dragElastic={0.1}
       dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
       className="relative"

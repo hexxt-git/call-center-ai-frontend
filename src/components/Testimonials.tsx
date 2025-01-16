@@ -130,10 +130,19 @@ interface TestimonialCardProps {
     image: string;
   };
 }
+import { useMediaQuery } from "react-responsive";
 
 function TestimonialCard({ testimonial }: TestimonialCardProps) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
+  useEffect(() => {
+    if (isMobile) {
+      x.set(0);
+      y.set(0);
+    }
+  }, [isMobile, x, y]);
 
   return (
     <motion.div
@@ -143,7 +152,7 @@ function TestimonialCard({ testimonial }: TestimonialCardProps) {
       transition={{ duration: 0.15 }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95, rotate: Math.random() * 6 - 3 }}
-      drag
+      drag={!isMobile}
       dragElastic={0.125}
       dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
       style={{ x, y }}

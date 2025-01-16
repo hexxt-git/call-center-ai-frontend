@@ -25,6 +25,16 @@ const faqs = [
     answer:
       "Yes, you can customize the AI agent's responses by providing your business information and FAQs during the setup process.",
   },
+  {
+    question: "How does the AI agent handle customer queries?",
+    answer:
+      "The AI agent uses natural language processing, machine learning, and retrieval-augmented generation (RAG) to understand and respond to customer queries effectively.",
+  },
+  {
+    question: "When will the service launch?",
+    answer:
+      "We have come a long way but we are still in the development phase. We are working hard to launch the service as soon as possible.",
+  },
 ];
 
 export default function FAQ() {
@@ -65,7 +75,7 @@ export default function FAQ() {
             {faqs.map((faq, index) => (
               <motion.div key={index} variants={itemVariants}>
                 <AccordionItem value={`item-${index}`}>
-                  <AccordionTrigger className="text-start text-lg lg:text-xl hover:no-underline">
+                  <AccordionTrigger className="text-start lg:text-lg hover:no-underline font-semibold">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="lg:text-lg">
