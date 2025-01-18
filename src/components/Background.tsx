@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ReactNode } from "react";
 
-export default function Layout({ children }: { children: ReactNode }) {
+export default function Background({ children }: { children: ReactNode }) {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, (value) => -value / 2);
 
@@ -119,7 +119,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           </svg>
         </motion.div>
       </div>
-      <div className="absolute inset-0 bg-white/50 z-10" />
+      <div className="absolute inset-0 bg-white/50 dark:bg-black/50 z-10" />
       <div className="relative z-20">{children}</div>
     </div>
   );

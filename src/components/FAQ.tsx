@@ -59,7 +59,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="relative z-30 pt-16 pb-64">
+    <section className="relative z-30 py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center">
           Frequently Asked Questions

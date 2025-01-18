@@ -5,17 +5,19 @@ import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import Demo from "@/components/Demo";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <div className="relative z-20">
+    <>
       <Header />
       <Demo />
       <FeatureOverview />
       <PricingPlans />
       <Testimonials />
       <FAQ />
+      <Contact />
       <Footer />
-    </div>
+    </>
   );
 }

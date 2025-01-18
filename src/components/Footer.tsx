@@ -87,8 +87,9 @@ export default function Footer() {
                 <li className="flex items-center">
                   <Laptop size={18} className="mr-2" />
                   <a
-                    href="https://linkedin.com/in/zegdani"
+                    href="https://linkedin.com/in/zeghdani"
                     className="hover:text-blue-400 transition-colors"
+                    target="_blank"
                   >
                     Zeghdani Salah
                   </a>
@@ -98,6 +99,7 @@ export default function Footer() {
                   <a
                     href="https://www.linkedin.com/in/aymen-charfaoui-15990828b/"
                     className="hover:text-blue-400 transition-colors"
+                    target="_blank"
                   >
                     Charfaoui Aymen
                   </a>
