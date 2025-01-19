@@ -6,9 +6,6 @@ import {
   Twitter,
   Instagram,
   Linkedin,
-  Mail,
-  Phone,
-  Computer,
   Laptop,
 } from "lucide-react";
 import { motion } from "framer-motion";
@@ -31,7 +28,7 @@ export default function Footer() {
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4">AI Call Center Agents</h3>
+              <h3 className="text-2xl font-bold mb-4">Parrot AI</h3>
               <p className="text-gray-400 mb-4">
                 Simplifying customer support with AI
               </p>
@@ -114,8 +111,7 @@ export default function Footer() {
             transition={{ delay: 0.5, duration: 0.5 }}
           >
             <p>
-              &copy; {new Date().getFullYear()} AI Call Center Agents. All
-              rights reserved.
+              @{new Date().getFullYear()} Parrot AI
             </p>
           </motion.div>
         </motion.div>
